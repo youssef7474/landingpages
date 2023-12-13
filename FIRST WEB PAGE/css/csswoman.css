@@ -1,0 +1,172 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color:#24252a;
+    transition: all 0.3s ease 0s;
+}
+li,a
+{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    
+}
+.logo
+{
+   
+    cursor: pointer;
+}
+.nav__links
+{
+    list-style: none;
+
+}
+.nav__links li
+{
+    display: inline-block;
+    padding: 0px 30px;
+}
+.nav__links li a
+{
+    transition: all 0.3s ease 0s;
+}
+.nav__links li a:hover
+{
+    color: blue;
+}
+.centername
+{
+    text-align: center;
+    font-family:monospace;
+    font-weight: 500;
+    font-size: 60px;
+    color:red;
+    float: left;
+}
+.category
+{
+    float: right;
+}
+nav ul
+{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+nav ul li
+{
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a
+{
+    display: block;
+    padding: 0px 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+nav ul li a:hover
+{
+    background: #243342;
+}
+nav ul ul
+{
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover >ul
+{
+    display: block;
+}
+#myinput
+{
+    float: right;
+    margin-top: -100px;
+    background-position: 10px 12px;
+    width: 250px;
+    font-size: 20px;
+    background-color: silver;
+    border:  groove darkslategrey;
+}
+.womancollection
+{
+    color: #f1efed ;
+    font-size: 80px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    text-align: center;
+}
+.mendi
+{
+    color: #edf0f1 ;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: 500px;
+}
+.mensp
+{
+    color: red;
+    font-size: 90px;
+    font-weight: 500px;
+    font-family: sans-serif;
+
+}
+.mensp1
+{
+    color: red;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 500px;
+    text-decoration: line-through;
+
+}
+.mensp2
+{
+    color:green;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 500px;
+
+}
+
+.woman
+{
+    position: absolute;
+    left: 30%;
+    bottom: 50px;
+    top: 3300px;
+}
+
+
+
+
+
+
+
+
+
+
+footer
+{
+    
+    font-size: 80px;
+    font-weight: 500px;
+    font-family: sans-serif;
+    text-align: center;
+    color: sandybrown ;
+}
