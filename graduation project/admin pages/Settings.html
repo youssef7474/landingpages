@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patients</title>
+    <link rel="Stylesheet" href="../css/all.min.css">
+    <link rel="Stylesheet" href="../css/normalize.css">
+    <link rel="Stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/framwork.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative">
+            <i class="fa-solid fa-heart-pulse logo"></i>     
+            <ul>
+                <li>
+                    <a class="  d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span>Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="Settings.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span>Settings </span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="view_ALL_Doctors.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Doctors </span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="view_All_patient.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>Patients </span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-14 c-black rad-6 p-10" href="view_All_nurse.html.html">
+                        <i class="fa-solid fa-user-group fa-fw"></i>
+                        <span>nurse </span>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="content w-full">
+            <div class="head bg-white p-15  between-flex">
+                <div class="search p-relative">
+                    <input type="search" placeholder="Type A Keyword" class="p-10">
+                </div>
+                <div class="icon d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </span>
+                </div>
+            </div>
+                 <!--<label>
+                    <input class="toggle-checkbox" type="checkbox">
+                    <div class="toggle-switch"> 
+                    </div>
+                </label>-->
+            <h1 class="p-relative">Admin profile</h1>
+            <div class="Settings-page m-20 d-grid gap-20">
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Security Info</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Security Information About Your Account</p>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>Password</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="button bg-blue c-white btn-shape" href="">Change</a>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>Two-Factor Authentication</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Enable/Disable The Feature</p>
+                        </div>
+                        <label>
+                            <input class="toggle-checkbox" type="checkbox">
+                            <div class="toggle-switch"> 
+                            </div>
+                        </label>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>Devices</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Check The Login Devices List</p>
+                        </div>
+                        <a class=" bg-eee c-black btn-shape" href="">Devices</a>
+                    </div>
+                </div>
+                <div class="p-20 bg-white rad-10">
+                    <h2 class="mt-0 mb-10">Add new users</h2>
+                    <p class="mt-0 mb-20 c-grey fs-15">Add and delete and eidt users data</p>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>Doctors</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="button bg-blue c-white btn-shape" href="add_doctor.html">Add Doctor</a>
+                        <a class="button bg-green c-white btn-shape" href="view_ALL_Doctors.html">view all doctors</a>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>patients</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="button bg-blue c-white btn-shape" href="Add_Patient.html">Add Patient</a>
+                        <a class="button bg-green c-white btn-shape" href="view_All_patient.html">view all patients</a>
+                    </div>
+                    <div class="sec-box mb-15 between-flex">
+                        <div>
+                            <span>admins</span>
+                            <p class="c-grey mt-5 mb-15 fs-13">Last Change On 25/10/2021</p>
+                        </div>
+                        <a class="button bg-blue c-white btn-shape" href="add_nurse.html">Add admin</a>
+                        <a class="button bg-green c-white btn-shape" href="view_All_nurse.html">view all admins</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

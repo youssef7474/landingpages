@@ -1,0 +1,452 @@
+:root
+{
+    --blue-color:#40C4ff;
+    --white-color:#ffffff;
+    --black-color:#000000;
+}
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+}
+*:focus
+{
+    outline: none;
+}
+a
+{
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+    padding: 0;
+}
+::-webkit-scrollbar
+{
+    width: 15px;
+}
+::-webkit-scrollbar-track
+{
+    background-color: white;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: var(--blue-color);
+}
+.page
+{
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+.sidebar
+{
+    width: 250px;
+    box-shadow: 0 0 10px #ddd;
+}
+.sidebar >h3
+{
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.sidebar ul li a
+{
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+.sidebar ul li a span
+{
+    font-size: 16px;
+    margin-left: 10px;
+}
+.sidebar ul li a:hover,
+.sidebar ul li a.active
+{
+    background-color: #f6f6f6;
+}
+.sidebar ul li a:hover i
+{
+    transition: 0.3s;
+}
+.sidebar ul li a:hover i,
+.sidebar ul li a.active i
+{
+    color: var(--blue-color);
+}
+@media (max-width:767px)
+{
+    .sidebar
+    {
+        width: 58px;
+        padding: 10px;
+    }
+    .sidebar >h3
+    {
+        font-size: 13px;
+        margin-bottom: 15px;
+    }
+    .sidebar > h3::before,
+    .sidebar > h3::after
+    {
+        display: none;
+    }
+    .sidebar ul li a span
+    {
+        display: none;
+    }
+}
+.content
+{
+    overflow: hidden;
+}
+.content .head .search::before
+{
+    font-family: var(--fa-style-family-classic);
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--grey-color);
+}
+.content .head .search input
+{
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-left: 5px;
+    padding-left: 30px;
+    width: 180px;
+    transition:  0.5s;
+}
+.content .head .search input:focus
+{
+    width: 220px;
+}
+.content .head .search input::placeholder
+{
+    transition: 0.5s;
+}
+.content .head .search input:focus::placeholder
+{
+    opacity: 0;
+}
+.content .head .icon .notification::before
+{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--red-color);
+    border-radius: 50%;
+    right: -5px;
+    top: -5px;
+}
+.content .head .icon img
+{
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+}
+.content .head .icon .notification i
+{
+    transition: 0.3s;
+    cursor: pointer;
+}
+.content .head .icon .notification:hover i
+{
+    color: var(--blue-color);
+}
+.page h1
+{
+    margin: 20px 20px 40px;
+}
+.page h1::before,
+.page h1::after
+{
+    content: "";
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+.page h1::before
+{
+    background-color: white;
+    width: 120px;
+}
+.page h1::after
+{
+    background-color: black;
+    width: 60px;
+}
+.logo
+{
+    font-size: 35px;
+    margin-left: 70px;
+    color: var(--blue-color);
+}
+.contanier
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (min-width :768px)
+{
+    .contanier{
+        width: 750px;
+    }
+}
+@media (min-width: 992px)
+{
+    .contanier{
+        width:970px;
+    }
+}
+@media (min-width: 1200px)
+{
+    .contanier{
+        width: 1170px;
+    }
+}
+body
+{
+    background-color: white;
+}
+.login-page .contanier
+{
+    min-height: 100vh;
+}
+.login-page .contanier
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-page .contanier::after
+{
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 100%;
+    background-color: var(--blue-color);
+    right: 0;
+}
+.login-page .contanier::before
+{
+    position: absolute;
+    content: "";
+    width: 500px;
+    height: 100%;
+    background-color: var(--blue-color);
+    left: 0;
+}
+@media (max-width:900px)
+{
+    .login-page .contanier::after,
+    .login-page .contanier::before
+    {
+        width: 0px;
+    }
+}
+@media (min-width:830px)
+{
+    .login-page .contanier::after,
+    .login-page .contanier::before
+    {
+        width: 100px;
+    }
+}
+.login-page .contanier form input[type="email"],
+.login-page .contanier form input[type="password"]
+{
+    display: block;
+    margin: 30px auto 30px auto ;
+    width: 300px;
+    padding: 10px;
+    border-radius: 6px;
+    border-color: var(--blue-color);
+}
+.login-page .contanier form input[type="submit"]
+{
+    margin: 10px auto 30px auto ;
+    padding:8px 10px 8px 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 6px;
+    border-color: var(--blue-color);
+    display: block;
+}
+.login-page .contanier .title
+{
+    position: absolute;
+    top: 20%;
+    color: var(--blue-color);
+}
+.login-page .contanier form .pass a
+{
+    font-size: 13px;
+    position: absolute;
+    color: var(--black-color);
+    font-weight: bold;
+}
+.friends-page
+{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+@media (max-width:767px)
+{
+    .friends-page
+    {
+        grid-template-columns: minmax(200px, 1fr);
+        margin-left: 10px ;
+        margin-right: 10px ;
+        gap: 10px;
+    }
+}
+.friends-page .contact
+{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.friends-page .contact i
+{
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 50%;
+    color: #666;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.friends-page .contact i:hover
+{
+    background-color: var(--blue-color);
+    color: white;
+}
+.friends-page .friend .icon
+{
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.friends-page .friend .icon i
+{
+    margin-right: 5px;
+}
+.friends-page .friend .icon .vip
+{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    opacity: 0.5;
+}
+.profile-page .contanier 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-page .contanier .profile img
+{
+    width: 64px;
+}
+.profile-page .contanier .profile .info
+{
+    display: flex;
+    
+}
+.Settings-page .Change
+{
+    display: flex;
+    padding-top: 20px;
+    text-transform: lowercase;
+}
+.toggle-checkbox
+{
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
+}
+.toggle-switch
+{
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch::before
+{
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    border-radius: 50%;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    transition: 0.3s;
+}
+.toggle-checkbox:checked + .toggle-switch
+{
+    background-color: var(--blue-color);
+}
+.toggle-checkbox:checked + .toggle-switch::before
+{
+    left: 50px;
+    content: "\f00c";
+    color: var(--blue-color);
+}
+.addDoctorForm
+{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.addDoctorForm form
+{
+    border: 3px solid var(--blue-color);
+    border-radius: 10px;
+}
+.addDoctor div
+{
+    padding: 30px;
+    text-align: center;
+}
+.addDoctor div label
+{
+    margin-right: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.addDoctor div input
+{
+    width: 250px;
+    border: 1px solid var(--blue-color);
+    border-radius: 6px ;
+    height: 30px;
+}

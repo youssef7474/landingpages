@@ -1,0 +1,291 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+.continer
+{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+}
+.header
+{
+    padding: 15px;
+    background-color: black;
+    height: 150px;
+}
+.header .continer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .continer .logo
+{
+    width: 100px;
+    margin-left: 30px;
+}
+.header .links
+{
+    list-style: none;
+}
+.header li
+{
+    display: inline-block;
+    padding-right: 230px;
+}
+.header .links ul li a 
+{
+    text-decoration: none;
+    color:white;
+    transition: 0.5s;
+}
+.header .links ul li a:hover
+{
+    color: #f2AA4cff;
+    font-size: 50px;
+}
+.landing
+{
+    background-image: url(../image/Home+exterior+photograph+during+twilight.jpg);
+    background-size: cover;
+    height: 80vh;
+    margin-top: -21px;
+}
+.landing .intro-text
+{
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    text-align: center;
+    width: 320px;
+    animation: slideup 1.5s ;
+    
+}
+@keyframes slideup
+{
+    from{
+        left: 0%;
+        opacity: 0;
+    }
+    to{
+        left: 35%;
+        opacity: 1;
+    }
+}
+.landing .intro-text h1
+{
+    font-weight: 700;
+    font-size: 50px;  
+}
+.landing .intro-text p
+{
+    font-size: 20px;
+    font-weight: 700;   
+}
+.special-heading
+{
+    position: absolute;
+    left: 35%;
+    font-size: 100px;
+    letter-spacing: -3px;
+    margin-top: 0px;
+    color: #f2AA4cff;
+    animation:slide-up-header 4s ;
+}
+@keyframes slide-up-header
+{
+    from{
+        left:-1px;
+        opacity: 0;
+    }
+    to{
+        right: 100px;
+        opacity: 1;
+    }
+}
+.Services-content
+{
+    padding-top: 150px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 180px;
+    margin-top: 80px;
+}
+.services-image
+{
+    border:#f2AA4cff solid 7px ;
+    width: 76%;
+    height: 99%;
+}
+.services-image img
+{
+    position: relative;
+    height: 400px;
+    width: 400px;
+    max-width: 100%;
+    
+}
+/*
+.services-image::before
+{
+    content: "";
+    position: absolute;
+    background-color:#f2AA4cff;
+    width: 100px;
+    height: 80%;
+    left: 90px;
+    top: 800px; 
+}
+*/
+.services-text
+{
+    margin-top: 10px;
+    font-size: 20px;
+    color: white;
+    
+}
+.services-text hr
+{
+    width: 50%;
+    display: inline-block;
+    border-color: #f2AA4cff;
+}
+.services-text p:first-of-type
+{
+    font-weight: bold;
+    line-height: 2;
+    margin-bottom: 30px;   
+    color: wheat;
+}
+.services-text p:last-of-type
+{
+    line-height: 2;
+    color: white;
+}
+.about
+{
+    margin-top: 80px;
+}
+.about-content
+{
+    padding-top: 150px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-gap: 0px;
+}
+.about-image img
+{
+    width: 500px;
+    height: 380px;
+    margin-left: 200px;
+    border: #FED053 6px solid;
+}
+.about-text2
+{
+    width: 90%;
+    margin-left: 101px;
+    color: wheat;
+    font-weight: bold;
+}
+.about-text
+{
+    color: wheat;
+    font-weight: bold;
+}
+.contact
+{
+    padding: 15px;
+}
+.info
+{
+    padding-top: 150px;
+}
+.label 
+{
+    text-align: center;
+    color: white;
+}
+.contact-box
+{
+    width: 500px;
+    background-color: black;
+    margin-top: 70px;
+    margin-left: 400px;
+    border: 3px solid #FED053;
+}
+.contact-box form
+{
+    margin: 35px;
+    padding-bottom: 20px;
+}
+.inputfield
+{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid black;
+    border-radius: 14px;
+    outline: none;
+}
+.text-area
+{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn
+{
+    border-radius: 20px;
+    margin-top: 18px;
+    padding: 10px;
+    margin-left: 130px;
+}
+.social
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-right: 290px; 
+    margin-top: 40px;
+}
+.social a
+{
+    margin-left: 100px;
+    text-decoration: none;
+    color: wheat;
+}
+.footer
+{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+    padding: 30px 10px;
+    height: 150px;
+}
+footer h3
+{
+    padding-top: 25px;
+}
+.footer span
+{
+    color: #f2AA4cff;
+}
