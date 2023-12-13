@@ -1,0 +1,19 @@
+:root
+{
+    --first:#fac93b;
+    --second:#373d4b;
+    --thired:#c85454;
+    --fourth:#f9bdc5;    
+}
+.logo
+{
+    width: 45px;
+}
+.navbar
+{
+    background-color: var(--second);
+}
+.drop-down:hover
+{
+    display: block;
+}
